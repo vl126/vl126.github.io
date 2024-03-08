@@ -39,6 +39,8 @@ document.addEventListener("mouseup", mouseUpHandler);
 function mouseDownHandler(e)
 {
   canMove=true;
+  x=e.clientX-canvas.offsetLeft;
+  y=e.clientY-canvas.offsetTop;
   color="#" +Math.floor(Math.random()*16777215).toString(16); 
 }
 function mouseUpHandler(e)
